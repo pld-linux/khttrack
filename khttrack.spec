@@ -13,6 +13,7 @@ URL:		http://savannah.nongnu.org/projects/khttrack/
 BuildRequires:	httrack-devel
 BuildRequires:	kdelibs-devel
 BuildRequires:	openssl-devel >= 0.9.7d
+Requires:	hicolor-icon-theme
 Requires:	httrack
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
