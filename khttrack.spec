@@ -13,6 +13,7 @@ URL:		http://savannah.nongnu.org/projects/khttrack/
 BuildRequires:	httrack-devel
 BuildRequires:	kdelibs-devel
 BuildRequires:	openssl-devel >= 0.9.7d
+Requires:	hicolor-icon-theme
 Requires:	httrack
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,8 +27,8 @@ Khttrack jest graficzn± nak³adka na Httrack opart± na bibliotece qt.
 %setup -q
 
 %build
-#locolor --> crystalsvg
-sed -i -e 's/locolor/crystalsvg/g' khttrack/*
+#locolor --> hicolor
+sed -i -e 's/locolor/hicolor/g' khttrack/*
 %configure2_13
 %{__make}
 
@@ -52,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/apps/%{name}
 %{_desktopdir}/%{name}.desktop
-%{_iconsdir}/crystalsvg/16x16/apps/khttrack.png
-%{_iconsdir}/crystalsvg/32x32/apps/khttrack.png
+%{_iconsdir}/hicolor/16x16/apps/khttrack.png
+%{_iconsdir}/hicolor/32x32/apps/khttrack.png
 %{_pixmapsdir}/%{name}.png
