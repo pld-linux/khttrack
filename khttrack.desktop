@@ -1,0 +1,13 @@
+# KDE Config File  
+[Desktop Entry]
+Type=Application
+Name=Khttrack
+Exec=khttrack -caption "%c" %i %m  
+Icon=khttrack.png
+Comment=Khttrack is a front-end to Httrack
+Comment[pl]=Graficzna nakładka na Httrack
+Terminal=0
+Name=Khttrack
+Categories=Application;Network
+Encoding=UTF-8
+# vi: encoding=utf-8
