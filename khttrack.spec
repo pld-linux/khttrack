@@ -9,6 +9,7 @@ Source0:	http://ftp.gnu.org/savannah/files/khttrack/stable.pkg/%{version}/%{name
 # Source0-md5:	1193cd59d7a56d499551a077423f539c
 Source1:	%{name}.png
 Source2:	%{name}.desktop
+URL:		http://savannah.nongnu.org/projects/khttrack/
 BuildRequires:	httrack-devel
 BuildRequires:	kdelibs-devel
 BuildRequires:	openssl-devel >= 0.9.7d
@@ -30,7 +31,6 @@ Khttrack jest graficzn± nak³adka na Httrack opart± na bibliotece qt.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
@@ -48,8 +48,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS README
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/apps/%{name}/khttrackui.rc
+%{_datadir}/apps/%{name}
 %{_desktopdir}/%{name}.desktop
-%{_iconsdir}/locolor/16x16/apps/khttrack.png
-%{_iconsdir}/locolor/32x32/apps/khttrack.png
+# XXX: use hicolor, locolor no longer exists
+#%{_iconsdir}/locolor/16x16/apps/khttrack.png
+#%{_iconsdir}/locolor/32x32/apps/khttrack.png
 %{_pixmapsdir}/%{name}.png
