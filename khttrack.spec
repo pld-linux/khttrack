@@ -2,7 +2,7 @@ Summary:	Khttrack is a front-end to Httrack
 Summary(pl):	Graficzna nak³adka na Httrack
 Name:		khttrack
 Version:	0.10
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		X11/Applications/Networking	
 Source0:	http://ftp.gnu.org/savannah/files/khttrack/stable.pkg/%{version}/%{name}-%{version}.tar.bz2
@@ -26,6 +26,8 @@ Khttrack jest graficzn± nak³adka na Httrack opart± na bibliotece qt.
 %setup -q
 
 %build
+#locolor --> hicolor
+sed -i -e 's/locolor/hicolor/g' khttrack/*
 %configure2_13
 %{__make}
 
@@ -50,7 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/apps/%{name}
 %{_desktopdir}/%{name}.desktop
-# XXX: use hicolor, locolor no longer exists
-#%{_iconsdir}/locolor/16x16/apps/khttrack.png
-#%{_iconsdir}/locolor/32x32/apps/khttrack.png
+%{_iconsdir}/hicolor/16x16/apps/khttrack.png
+%{_iconsdir}/hicolor/32x32/apps/khttrack.png
 %{_pixmapsdir}/%{name}.png
