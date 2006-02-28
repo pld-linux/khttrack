@@ -4,7 +4,7 @@ Name:		khttrack
 Version:	0.10
 Release:	1
 License:	GPL
-Group:		X11/Applications/Networking	
+Group:		X11/Applications/Networking
 Source0:	http://ftp.gnu.org/savannah/files/khttrack/stable.pkg/%{version}/%{name}-%{version}.tar.bz2
 # Source0-md5:	1193cd59d7a56d499551a077423f539c
 Source1:	%{name}.png
