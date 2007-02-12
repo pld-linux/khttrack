@@ -1,5 +1,5 @@
 Summary:	Khttrack is a front-end to Httrack
-Summary(pl):	Graficzna nak³adka na Httrack
+Summary(pl.UTF-8):   Graficzna nakÅ‚adka na Httrack
 Name:		khttrack
 Version:	0.10
 Release:	1
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Khttrack is a front-end to Httrack, used as library, for Kde.
 
-%description -l pl
-Khttrack jest graficzn± nak³adka na Httrack opart± na bibliotece qt.
+%description -l pl.UTF-8
+Khttrack jest graficznÄ… nakÅ‚adka na Httrack opartÄ… na bibliotece qt.
 
 %prep
 %setup -q
