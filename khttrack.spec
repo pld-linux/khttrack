@@ -1,5 +1,5 @@
 Summary:	Khttrack is a front-end to Httrack
-Summary(pl.UTF-8):   Graficzna nakładka na Httrack
+Summary(pl.UTF-8):	Graficzna nakładka na Httrack
 Name:		khttrack
 Version:	0.10
 Release:	1
