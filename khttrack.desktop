@@ -7,6 +7,5 @@ Icon=khttrack
 Comment=Khttrack is a front-end to Httrack
 Comment[pl]=Graficzna nakładka na Httrack
 Terminal=false
-Name=Khttrack
-Categories=Application;Network;
+Categories=KDE;Network;
 # vi: encoding=utf-8
