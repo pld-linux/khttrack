@@ -54,6 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/apps/%{name}
 %{_desktopdir}/%{name}.desktop
-%{_iconsdir}/hicolor/16x16/apps/khttrack.png
-%{_iconsdir}/hicolor/32x32/apps/khttrack.png
+%{_iconsdir}/hicolor/*x*/apps/khttrack.png
 %{_pixmapsdir}/%{name}.png
